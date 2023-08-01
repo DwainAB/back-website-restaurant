@@ -1,8 +1,17 @@
-<form action="./add_product.php" enctype="multipart/form-data" method="POST">
-    <input type="text" name="title" placeholder="titre">
-    <input type="text" name="description" placeholder="description">
-    <input type="text" name="price" placeholder="price">
-    <input type="text" name="category" placeholder="category">
-    <input required type="file" accept="image/*" name="image">
+<form action="./reservation/add_reservation.php" method="POST">
+    <input type="text" name="firstName" placeholder="firstName">
+    <input type="text" name="lastName" placeholder="lastName">
+    <input type="email" name="email" placeholder="email">
+    <input type="text" name="phone" placeholder="phone">
+    <input type="date" name="date">
+    <input type="time" name="hour">
+    <input type="number" name="quantity">
     <input type="submit">
+</form>
+
+<!-- Votre formulaire HTML -->
+<form action="./reservation/get_reservation_by_date.php" method="get">
+    <label for="selected_date">Sélectionner une date :</label>
+    <input type="date" id="selected_date" name="date">
+    <input type="submit" value="Rechercher">
 </form>
